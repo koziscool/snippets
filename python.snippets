@@ -1,0 +1,26 @@
+
+snippet im
+	import
+
+snippet xr
+	for ${1:i} in xrange(${2:size}): 
+		${0}
+
+snippet fn
+	def ${1:func_name}(${2}):
+		${0}
+		return ${3}
+
+snippet eul
+	import time
+	${0}
+	
+	def e${1:xx}():
+		return ${4}
+
+	if __name__ == '__main__':
+		start = time.time()
+		print
+		print "Euler ${2:xx} solution is:",  e${3:xx}()
+		end = time.time()
+		print "elapsed time is: %.4f milliseconds" % (1000 * (end - start))
